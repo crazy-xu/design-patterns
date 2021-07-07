@@ -8,6 +8,11 @@ package pattern.adapter.general.clazz;
  */
 public class Adapter extends Adaptee implements Target {
 
+    /**
+     * 当前业务所期待的接口，它可以是抽象类或接口。
+     *
+     * @return
+     */
     @Override
     public int request() {
         return super.specificRequest() / 10;
